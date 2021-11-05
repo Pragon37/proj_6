@@ -41,6 +41,7 @@ next.addEventListener('click', () => {
 	prev.classList.add('show');
 	track.style.transform = `translateX(-${index * carouselWidth}px)`;
 
+
 	if (track.offsetWidth -(index * carouselWidth) < carouselWidth){
      next.classList.add('hide');
 	}
