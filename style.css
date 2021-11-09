@@ -1,4 +1,16 @@
 /* Header */
+body{
+	background-color:#000;
+}
+
+.picture-container .material-icons {
+	color : red;
+    position: relative;
+    right: -90px;
+		top: -170px;
+    font-size: 5em;
+	  z-index: 2;
+}
 
 header {
     display: flex;
@@ -84,6 +96,16 @@ header nav a:hover
 	flex-direction: column;
 }
 
+.picture-container .card-container .card  img{
+	height: 248px;  //86 % Does not work with Firefox
+	margin-bottom: 1px;
+	border-radius: 5%;
+}
+.carousel-container .carousel-inner .track .card-container .card  img{
+	height: 248px;  //86 % Does not work with Firefox
+	margin-bottom: 1px;
+	border-radius: 5%;
+}
 
 .carousel-container {
 	width: 1280px;
@@ -104,7 +126,7 @@ header nav a:hover
 
 .carousel-container .track {
 	display: inline-flex;
-//	transition: transform 0.3s;
+	transition: transform 0.3s;
 	position: relative;
 	z-index: 1;
 }
@@ -133,7 +155,7 @@ header nav a:hover
 	border: 1px solid #aaa;
 	position: absolute;
 	top:50%;
-	transform: translateY(-50%);
+	transform: translateY(-110%);
 	cursor: pointer;
 }
 
@@ -147,7 +169,7 @@ header nav a:hover
 }
 
 .nav .next {
-	right: -30px;
+	right: -40px;
 }
 
 .nav .next.hide {
@@ -159,17 +181,29 @@ header nav a:hover
 	flex: 1;	
 }
 
-.card .info {
-	flex-basis: 40px;
-	background: #333;
-	color: #fff;
-	flex-grow: 0;
-	padding: 10px;
-	box-sizing: border-box;
-}
+//.card .info {
+//	flex-basis: 40px;
+//	background: #333;
+//	color: #fff;
+//	flex-grow: 0;
+//	padding: 10px;
+//	box-sizing: border-box;
+//}
 .card .card-number {
 	display:flex;
+	flex-basis: content;
 	justify-content: center;
 	align-items: center;
 	font-size: 30px;
+	color: #fff;
+}
+body > div:nth-child(12) > p,
+body > div:nth-child(21) > p,
+body > div:nth-child(30) > p,
+body > div:nth-child(39) > p {
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	color:#fff;
 }
