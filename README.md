@@ -38,6 +38,7 @@ There are 8 movies per category. At most 5 are displayed on the navigator page. 
 next button on the right side of the screen. Clicking the left side button that is displayed after sliding to the right
 returns to the initial display.
 
+checked with Chrome,Edge,Firefox
  
 ## Links
 

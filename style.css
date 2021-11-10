@@ -1,81 +1,72 @@
 /* Header */
-body{
-	background-color:#000;
+
+body {
+	background-color: #000;
 }
 
 .picture-container .material-icons {
-	color : red;
-    position: relative;
-    right: -90px;
-		top: -170px;
-    font-size: 5em;
-	  z-index: 2;
+	color: red;
+	position: relative;
+	right: -90px;
+	top: -170px;
+	font-size: 5em;
+	z-index: 2;
 }
 
 header {
-    display: flex;
-		width: 1280px;
-    align-items: flex-end;
-    justify-content: space-between;
-	  border: 1px solid #ccc;
-	  box-sizing: border-box;
-		background-color: pink;
-	  margin: 50px auto;
+	display: flex;
+	width: 1280px;
+	align-items: flex-end;
+	justify-content: space-between;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	background-color: pink;
+	margin: 50px auto;
 }
 
 .showcase-top {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
-
 .showcase-top .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
 }
 
 .logo img {
-    width: 100px;
-    height: 60px;
+	width: 100px;
+	height: 60px;
 }
+
 
 /* Navigation */
 
-header nav ul
-{
-    list-style-type: none;
-    display: flex;
+header nav ul {
+	list-style-type: none;
+	display: flex;
 }
 
-header nav li
-{
-    margin-right: 15px;
+header nav li {
+	margin-right: 15px;
 }
 
-header nav a
-{
-    font-size: 1.3em;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
+header nav a {
+	font-size: 1.3em;
+	color: #181818;
+	padding-bottom: 3px;
+	text-decoration: none;
 }
 
-header nav a:hover
-{
-    color: #760001;
-    border-bottom: 3px solid #760001;
+header nav a:hover {
+	color: #760001;
+	border-bottom: 3px solid #760001;
 }
 
 .picture-container {
-    display: flex;
-	  justify-content: center;
-//		transform: translateX(10px);
-//    align-items: flex-end;
-//	  border: 1px solid #ccc;
-//	  box-sizing: border-box;
-//		background-color: pink;
-//		background-color: green;
+	display: flex;
+	justify-content: center;
 }
 
 .picture-container .card-container {
@@ -87,22 +78,24 @@ header nav a:hover
 }
 
 .picture-container .card-container .card {
-	width:100%;
+	width: 100%;
 	height: 100%;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 	border-radius: 5%;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 }
 
-.picture-container .card-container .card  img{
-	height: 248px;  //86 % Does not work with Firefox
+/*86 % Does not work with Firefox : use height: 248px; instead */
+.picture-container .card-container .card img {
+	height: 248px;
 	margin-bottom: 1px;
 	border-radius: 5%;
 }
-.carousel-container .carousel-inner .track .card-container .card  img{
-	height: 248px;  //86 % Does not work with Firefox
+
+.carousel-container .carousel-inner .track .card-container .card img {
+	height: 248px;
 	margin-bottom: 1px;
 	border-radius: 5%;
 }
@@ -116,10 +109,11 @@ header nav a:hover
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-container {
+	.carousel-container {
 		width: 80%;
 	}
 }
+
 .carousel-container .carousel-inner {
 	overflow: hidden;
 }
@@ -130,6 +124,7 @@ header nav a:hover
 	position: relative;
 	z-index: 1;
 }
+
 .carousel-container .card-container {
 	width: 259px;
 	height: 300px;
@@ -139,12 +134,12 @@ header nav a:hover
 }
 
 .carousel-container .card-container .card {
-	width:100%;
+	width: 100%;
 	height: 100%;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 	border-radius: 5%;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 }
 
@@ -154,7 +149,7 @@ header nav a:hover
 	border-radius: 50%;
 	border: 1px solid #aaa;
 	position: absolute;
-	top:50%;
+	top: 50%;
 	transform: translateY(-110%);
 	cursor: pointer;
 }
@@ -176,26 +171,29 @@ header nav a:hover
 	display: none;
 }
 
+
 /*Card and everything underneath*/
-.card > * {
-	flex: 1;	
+
+.card>* {
+	flex: 1;
 }
 
 .card .card-number {
-	display:flex;
+	display: flex;
 	flex-basis: content;
 	justify-content: center;
 	align-items: center;
 	font-size: 30px;
 	color: #fff;
 }
-body > div:nth-child(12) > p,
-body > div:nth-child(21) > p,
-body > div:nth-child(30) > p,
-body > div:nth-child(39) > p {
- 	display: flex;
+
+body>div:nth-child(12)>p,
+body>div:nth-child(21)>p,
+body>div:nth-child(30)>p,
+body>div:nth-child(39)>p {
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 30px;
-	color:#fff;
+	color: #fff;
 }
