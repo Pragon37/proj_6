@@ -181,14 +181,6 @@ header nav a:hover
 	flex: 1;	
 }
 
-//.card .info {
-//	flex-basis: 40px;
-//	background: #333;
-//	color: #fff;
-//	flex-grow: 0;
-//	padding: 10px;
-//	box-sizing: border-box;
-//}
 .card .card-number {
 	display:flex;
 	flex-basis: content;
